@@ -40,14 +40,17 @@
 
           <label for="radio">Mortgage Type</label>
           <div class="radio-input">
-            <input type="radio" name="radio" id="radio" />
+            <input type="radio" name="radio" id="radio" class="radio" />
             <p class="radio-input-text">Repayment</p>
           </div>
           <div class="radio-input">
-            <input type="radio" name="radio" id="radio" />
+            <input type="radio" name="radio" id="radio" class="radio" />
             <p class="radio-input-text">Interest Only</p>
           </div>
-          <button type="submit">Calculate Repayments</button>
+          <button type="submit" class="submit-btn">
+            <img src="./assets/images/icon-calculator.svg" alt="" />
+            <p>Calculate Repayments</p>
+          </button>
         </form>
       </div>
       <div class="midnightblue-background">
@@ -72,5 +75,6 @@
     repayments” again. Your monthly repayments Total you'll repay over the term
     .
     <!-- Completed results end -->
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -56,7 +56,7 @@ label {
 
 .break {
   display: flex;
-  flex-direction: column-reverse;
+  justify-content: flex-start;
 }
 
 .white-background-heading {
@@ -84,9 +84,6 @@ label {
   align-items: center;
   gap: 5%;
   text-align: left;
-  border-radius: 50%;
-  border: 2px solid #ccc; /* Default outline color */
-  background-color: #f0f0f0; /* Default background color */
   cursor: pointer;
 }
 
@@ -102,20 +99,16 @@ input[type="text"] {
   justify-content: flex-start;
   margin: 1rem 0 3rem 0;
   border: 0.1px solid hsl(202, 55%, 16%);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
-input[type="radio"] {
+.radio {
   accent-color: hsl(61, 70%, 52%);
-  width: 4rem;
-  height: 4rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-}
-
-input[type="radio"]:checked::before {
-  accent-color: hsl(61, 70%, 52%);
 }
 
 .inline-rates input[type="text"] {
@@ -129,10 +122,26 @@ input[type="radio"]:checked::before {
   gap: 1.5rem;
   align-items: center;
   margin-top: 1rem;
+  border-radius: 5px;
 }
 
 .radio-input-text {
   color: hsl(202, 55%, 16%);
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 0 3rem 0;
+  gap: 1rem;
+  text-align: center;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20px;
+  background-color: hsl(61, 70%, 52%);
+  color: hsl(202, 55%, 16%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
 }
