@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="white-background">
+        <span class="heading">
+          <h3 class="white-background-heading">Mortgage Calculator</h3>
+          <p class="heading-reset">Clear All</p>
+        </span>
+        <form action="#">
+          <label for="montage-amount">Mortgage Amount </label>
+          <input type="text" name="montage" id="montage-amount" />
+
+          <div class="inline-rates">
+            <span>
+              <label for="montage-terms" class="break">Mortgage Term</label>
+              <input type="text" name="" id="montage-terms" />
+            </span>
+
+            <span>
+              <label for="Interest-Rate" class="break">Interest Rate</label>
+              <input type="text" name="" id="Interest-Rate" />
+            </span>
+          </div>
+
+          <label for="radio">Mortgage Type</label>
+          <div class="radio-input">
+            <input type="radio" name="radio" id="radio" />
+            <p class="radio-input-text">Repayment</p>
+          </div>
+          <div class="radio-input">
+            <input type="radio" name="radio" id="radio" />
+            <p class="radio-input-text">Interest Only</p>
+          </div>
+          <button type="submit">Calculate Repayments</button>
+        </form>
+      </div>
+      <div class="midnightblue-background">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam officia
+        possimus dolorem eveniet qui provident repudiandae asperiores, beatae
+        iste ea in repellendus atque sed ratione neque voluptatibus quia autem
+        accusantium.
+      </div>
+    </main>
+
+    <!-- Empty results start -->
+
+    Results shown here Complete the form and click “calculate repayments” to see
+    what your monthly repayments would be.
+
+    <!-- Empty results end -->
+
+    <!-- Completed results start -->
+
+    Your results Your results are shown below based on the information you
+    provided. To adjust the results, edit the form and click “calculate
+    repayments” again. Your monthly repayments Total you'll repay over the term
+
+    <!-- Completed results end -->
+  </body>
+</html>

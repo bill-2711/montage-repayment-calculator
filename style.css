@@ -1,0 +1,135 @@
+/* 
+PADDING: 
+1.6rem
+
+*/
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf)
+    format(truetype);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: "PlusJakartaSans";
+  color: #333;
+  background-color: hsl(202, 86%, 94%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 120%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(200, 24%, 40%);
+  text-align: left;
+}
+
+.break {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.white-background-heading {
+  color: hsl(202, 55%, 16%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.heading-reset {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-decoration-color: hsl(203, 41%, 72%);
+}
+
+.white-background {
+  text-align: left;
+  padding: 1.6rem;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+}
+
+.inline-rates {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  text-align: left;
+  border-radius: 50%;
+  border: 2px solid #ccc; /* Default outline color */
+  background-color: #f0f0f0; /* Default background color */
+  cursor: pointer;
+}
+
+.midnightblue-background {
+  background-color: hsl(202, 55%, 16%);
+  padding: 1.6rem;
+}
+
+input[type="text"] {
+  padding: 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem 0 3rem 0;
+  border: 0.1px solid hsl(202, 55%, 16%);
+  border-radius: 3px;
+}
+
+input[type="radio"] {
+  accent-color: #d7da2f;
+  /* accent-color: red; */
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.inline-rates input[type="text"] {
+  width: 100%;
+}
+
+.radio-input {
+  border: 0.1px solid hsl(200, 26%, 54%);
+  padding: 1.6rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.radio-input-text {
+  color: hsl(202, 55%, 16%);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
