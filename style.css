@@ -106,13 +106,16 @@ input[type="text"] {
 }
 
 input[type="radio"] {
-  accent-color: #d7da2f;
-  /* accent-color: red; */
+  accent-color: hsl(61, 70%, 52%);
   width: 4rem;
   height: 4rem;
   border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+  accent-color: hsl(61, 70%, 52%);
 }
 
 .inline-rates input[type="text"] {
